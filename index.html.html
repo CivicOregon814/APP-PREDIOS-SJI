@@ -1,0 +1,32 @@
+<!-- screen1.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pantalla 1 – Bienvenida</title>
+  <style>
+    :root { --primary:#8b1e33; --secondary:#b88e55; --text:#000; --bg:#fff; --bg-light:#f5f5f5; }
+    body { margin:0; font-family:Roboto, sans-serif; background:var(--bg-light); color:var(--text); }
+    .top-bar { background:#fff; padding:20px 0; text-align:center; }
+    .top-bar img { height:60px; }
+    .container { padding:20px; max-width:400px; margin:0 auto; background:var(--bg); height:100vh; box-sizing:border-box; }
+    img.header-img { width:100%; height:auto; border-radius:8px; margin-bottom:15px; }
+    h1 { color:var(--primary); text-align:center; font-size:1.6em; margin:10px 0; }
+    p { text-align:center; color:#555; margin:5px 0; }
+    .btn { display:block; width:100%; padding:12px; margin:20px 0; border:none; border-radius:12px; background:var(--primary); color:#fff; font-size:16px; cursor:pointer; }
+  </style>
+  <script>
+    function goToScreen2() { window.location.href = 'screen2.html'; }
+  </script>
+</head>
+<body>
+  <div class="top-bar"><img src="Logo-rojo-e1739375559901.png" alt="Logo"></div>
+  <div class="container">
+    <img class="header-img" src="mapa 3D.png" alt="Mapa 3D">
+    <h1>Bienvenidos a PrediosSJI</h1>
+    <p>Acceda a información de la propiedad, vea datos históricos y explore detalles interactivos.</p>
+    <button class="btn" onclick="goToScreen2()">Comenzar</button>
+  </div>
+</body>
+</html>

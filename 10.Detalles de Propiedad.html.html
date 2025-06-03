@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pantalla 10 – Detalle de la Propiedad</title>
+  <style>
+    :root { --primary:#8b1e33; --secondary:#b88e55; --text:#000; --bg:#fff; --bg-light:#f5f5f5; }
+    body { margin:0; font-family:Roboto, sans-serif; background:var(--bg-light); color:var(--text); }
+    .top-bar { background:#fff; padding:20px 0; text-align:center; }
+    .top-bar img { height:60px; }
+    .container { padding:20px; max-width:400px; margin:0 auto; background:var(--bg); box-sizing:border-box; }
+    h1 { color:var(--primary); text-align:center; font-size:1.6em; margin-bottom:10px; }
+    .card { background:#e9ecef; padding:15px; border-radius:8px; margin-bottom:15px; text-align:left; }
+    .card h2 { margin-top:0; font-size:1.1em; }
+    .btn { display:block; width:100%; padding:12px; margin:10px 0; border:none; border-radius:12px; background:var(--primary); color:#fff; cursor:pointer; }
+    .btn-secondary { display:block; width:100%; padding:12px; border:none; border-radius:12px; background:var(--secondary); color:#fff; cursor:pointer; }
+  </style>
+  <script>
+    function goToScreen9() { window.location.href = 'screen9.html'; }
+  </script>
+</head>
+<body>
+  <div class="top-bar"><img src="Logo-rojo-e1739375559901.png" alt="Logo Municipio"></div>
+  <div class="container">
+    <h1>Detalle de la Propiedad</h1>
+    <div class="card">
+      <h2>Tipo de propiedad</h2><p>Residencial</p>
+      <h2>Urgencia</h2><p>Alta</p>
+      <h2>Fecha límite</h2><p>--</p>
+    </div>
+    <button class="btn" onclick="goToScreen9()">Completar tarea</button>
+    <button class="btn-secondary" onclick="goToScreen9()">Volver</button>
+  </div>
+</body>
+</html>
