@@ -3,38 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pantalla 5 – Resultados</title>
+  <title>Pantalla 6 – Detalles</title>
   <style>
     :root { --primary:#8b1e33; --secondary:#b88e55; --text:#000; --bg:#fff; --bg-light:#f5f5f5; }
     body { margin:0; font-family:Roboto, sans-serif; background:var(--bg-light); color:var(--text); }
     .top-bar { background:#fff; padding:20px 0; text-align:center; }
     .top-bar img { height:60px; }
-    .container { padding:20px; max-width:400px; margin:0 auto; background:var(--bg); height:100vh; box-sizing:border-box; }
+    .container { padding:20px; max-width:400px; margin:0 auto; background:var(--bg); box-sizing:border-box; }
     h1 { color:var(--primary); text-align:center; font-size:1.6em; margin-bottom:10px; }
-    ul { list-style:none; padding:0; }
-    ul li { padding:10px; border:1px solid #ccc; border-radius:8px; margin-bottom:8px; cursor:pointer; }
-    .nav-btn-group { display:flex; gap:10px; margin:15px 0; }
-    .nav-btn-group .btn { flex:1; padding:12px; border:none; border-radius:12px; background:var(--primary); color:#fff; cursor:pointer; }
-    .btn-secondary { display:block; width:100%; padding:12px; margin:10px 0; border:none; border-radius:12px; background:var(--secondary); color:#fff; cursor:pointer; }
+    .card { background:#e9ecef; padding:15px; border-radius:8px; margin-bottom:15px; text-align:left; }
+    .card h2 { margin-top:0; font-size:1.1em; }
+    .map-placeholder { width:100%; height:250px; border-radius:8px; margin-bottom:15px; object-fit:cover; }
+    .btn { display:block; width:100%; padding:12px; margin:10px 0; border:none; border-radius:12px; background:var(--primary); color:#fff; cursor:pointer; }
+    .btn-secondary { display:block; width:100%; padding:12px; margin:0; border:none; border-radius:12px; background:var(--secondary); color:#fff; cursor:pointer; }
   </style>
   <script>
-    function goToScreen6() { window.location.href = 'screen6.html'; }
-    function goToScreen7() { window.location.href = 'screen7.html'; }
-    function goToScreen4() { window.location.href = 'screen4.html'; }
+    function goToScreen3() { window.location.href = 'screen3.html'; }
+    function goToScreen5() { window.location.href = 'screen5.html'; }
   </script>
 </head>
 <body>
   <div class="top-bar"><img src="Logo-rojo-e1739375559901.png" alt="Logo Municipio"></div>
   <div class="container">
-    <h1>Resultados de búsqueda</h1>
-    <ul>
-      <li onclick="goToScreen6()">Predio ABC123 – Calle Falsa 123</li>
-    </ul>
-    <div class="nav-btn-group">
-      <button class="btn" onclick="goToScreen6()">Ver movimientos</button>
-      <button class="btn" onclick="goToScreen7()">Explorar ubicaciones</button>
+    <h1>Detalles de la propiedad</h1>
+    <div class="card">
+      <h2>Información</h2>
+      <p>Tipo: Residencial</p>
+      <p>Superficie: 2500 m²</p>
+      <p>Uso de suelo: Habitacional</p>
+      <p>Servicios: Agua, Electricidad</p>
     </div>
-    <button class="btn-secondary" onclick="goToScreen4()">Volver a búsqueda</button>
+    <div class="card">
+      <h2>Ubicación</h2>
+      <img src="terreno.png" class="map-placeholder" alt="Terreno">
+    </div>
+    <div class="card">
+      <h2>Movimientos históricos</h2>
+      <p>01/05/2022 – Transferencia de propiedad</p>
+      <p>15/03/2021 – Avalúo realizado</p>
+      <p>10/11/2020 – Rezonificación aprobada</p>
+    </div>
+    <button class="btn" onclick="goToScreen3()">Finalizar</button>
+    <button class="btn-secondary" onclick="goToScreen5()">Volver a resultados</button>
   </div>
 </body>
 </html>
